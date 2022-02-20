@@ -1,0 +1,19 @@
+﻿@model IEnumerable<WebApplication3.Models.Employee>
+@{
+}
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone no</th>
+
+    </tr>
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>@emp.ename</td>
+            <td>@emp.email.</td>
+            <td>@emp.econtact</td>
+        </tr>
+    }
+</table>
